@@ -1,0 +1,30 @@
+instalamos json-server: npm i json-server
+tenemos que crear una carperta db.json o db.json5: aca colocamos el json
+
+
+"start": "json-server --watch db.json": ejecutamos start, con watch va a estar mirando el json db.json
+al ejecutar start desde la termonal: npm start, nos muetra que tenemos tres endpoint: 
+Endpoints:
+        http://localhost:3000/profesores
+        http://localhost:3000/alumnos
+        http://localhost:3000/cursos
+tambien el index: 
+Index:
+http://localhost:3000/
+
+
+Http metodos
+GET pedir, conseguir info
+POST crear un nuevo recurso
+PUT reemplazar un recurso
+PATCH actualizar parcialmente un recurso (la info) ej: modificamos solo un item del json: "nombre": "jorge mattii" por "nombre": "jorge luis mattii"
+DELETE poara borrar un recurso, con solo poner el id ya lo borra
+
+postman
+codigos
+200 busqueda exitosa GET
+201 creacion existosa POST
+204 va vacio
+404 no se encontro 
+400 mal escrito algo
+500 error
